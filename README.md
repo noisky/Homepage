@@ -1,7 +1,7 @@
-# Noisky 的博客 - Hexo
-This is a blog Powerd by Hexo
+# 饭饭's Homepage 2.0
+This is a homepage for Noisky.
 
-本博客由博客程序 Hexo 驱动，代码托管在 Github ，主题 raytaylorism
+饭饭的个人主页.
 
 
 测试地址：http://noisky.ml
