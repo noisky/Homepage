@@ -582,6 +582,33 @@ i {
 
 *:focus {
   outline: none; }
+  
+   .wechat[data-v] {
+    position: relative;
+}
+.qrCode[data-v] {
+    display: none;
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    bottom: 42px;
+    left: -28px;
+    text-align: center;
+    background-color: #fff;
+}
+.wechat .qrCode .triangle-down[data-v] {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -6px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+.wechat:hover .qrCode[data-v]{display: inline;}
+ 
 
 @media all and (max-width: 1100px) {
   .panel-cover__logo {
@@ -620,9 +647,6 @@ i {
     display: block;
     max-width: 600px;
     margin: 0 auto; }
-
-  .panel-cover__divider--secondary {
-    display: none; }
 
   .panel-cover {
     width: 100%;
