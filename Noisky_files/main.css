@@ -246,13 +246,13 @@ table thead tbody {
   padding: 50px 0; }
 
 .footer {
-    position: relative;
-    top: 90px;
+    position: absolute;
     font-size: .7em;
     color: #b3b3b3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
-
-
 
 .avatar,
 .logo {
@@ -735,3 +735,5 @@ i {
   .friendsdiv img {
     box-shadow: 5px 5px 12px #888888;
     margin: 10px 10px; }
+
+	
