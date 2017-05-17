@@ -13,16 +13,13 @@
   
   <link rel="stylesheet" href="https://static.noisky.cn/homepage/font-awesome.min.css">
   <link rel="stylesheet" href="https://static.noisky.cn/homepage/main.css">
-
 </head>
-
 <body>
-
     <span class="mobile btn-mobile-menu">
         <i class="fa fa-list btn-mobile-menu__icon"></i>
         <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
     </span>
-    
+    <!-- 随机选取背景图片 -->
     <script type="text/javascript">
 	//<!CDATA[
 	var bg = [];
@@ -50,17 +47,19 @@
         <a href="http://ffis.me/" title="前往 饭饭's Blog"><img src="https://static.noisky.cn/homepage/img/noisky.jpg" width="150" alt="Noisky logo" class="panel-cover__logo logo"></a>
         <h1 class="panel-cover__title panel-title"><a href="http://ffis.me/" title="link to homepage for noisky">饭饭</a></h1>
 
-        
         <span class="panel-cover__subtitle panel-subtitle">Just do it.</span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">嗨，我是 Noisky，一名来自2.5次元的魔法师，目前就读于河南工业大学，土木工程专业。</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
         
-        
         <p class="panel-cover__description">欢迎来到我的魔法世界!</p>
-        
-        <p class="footer">Noisky &copy; 2017  |  <a style="TEXT-DECORATION: none" href="http://www.miibeian.gov.cn" rel="nofollow" target="_blank"><font color="#b3b3b3">豫ICP备16034017号</font></a></p>
+        <!-- 底部年份动态化 -->
+		<script type="text/javascript">
+		var myDate = new Date();
+		document.write('<p class="footer">Noisky &copy; '+myDate.getFullYear()+'  |  <a style="TEXT-DECORATION: none" href="http://www.miibeian.gov.cn" rel="nofollow" target="_blank"><font color="#b3b3b3">豫ICP备16034017号</font></a></p>');
+		</script> 
+		
         <div class="navigation-wrapper">
           <div>
             <nav class="cover-navigation cover-navigation--primary">
@@ -80,8 +79,6 @@
           
 <div><nav class="cover-navigation navigation--social">
   <ul class="navigation">
-
-  
   <!-- Weibo -->
   <li class="navigation__item">
     <a href="http://weibo.com/u/5230249128" title="五分缘的微博" target="_blank">
@@ -91,11 +88,22 @@
 
   <!-- QQ -->
   <li class="navigation__item">
-    <a href="http://sighttp.qq.com/msgrd?v=3&uin=76698242&site=&menu=yes" title="QQ @饭饭" target="_blank">
+    <a data-v class="wechat" href="#" title="QQ @饭饭">
+	<div data-v class="qrCode">
+	 <img data-v src="https://static.noisky.cn/homepage/img/qq.png" width="92" onclick='window.open("https://static.noisky.cn/homepage/img/qq.png")'>
+	  <div data-v class="triangle-down"></div>
+	</div>
       <i class="social fa fa-qq"></i>
     </a>
   </li>
 
+  <!-- Telegram -->
+  <li class="navigation__item">
+    <a href="https://telegram.me/Noisky" title="Telegeam @Noisky" target="_blank">
+      <i class="social fa fa-telegram"></i>
+    </a>
+  </li>
+  
   <!-- Weixin -->
   <li class="navigation__item">
     <a data-v href="#" title="扫一扫加我微信" class="wechat">
@@ -104,13 +112,6 @@
 	  <div data-v class="triangle-down"></div>
 	</div>
       <i class="social fa fa-weixin"></i>
-    </a>
-  </li>
- 
-  <!-- Telegram -->
-  <li class="navigation__item">
-    <a href="https://telegram.me/Noisky" title="Telegeam @Noisky" target="_blank">
-      <i class="social fa fa-telegram"></i>
     </a>
   </li>
   
@@ -134,25 +135,17 @@
       <i class="social fa fa-envelope"></i>
     </a>
   </li>
- 
-  
-  
   </ul>
 </nav>
 </div>
-
         </div>
-		
 	  </div>
     </div>
-	
-
     <div class="panel-cover--overlay cover-slate"></div>
-    
   </div>
-  
 </header>
 <script type="text/javascript" src="https://static.noisky.cn/homepage/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="https://static.noisky.cn/homepage/main.js"></script>
+  <!-- 统计代码 -->
 </body>
 </html>

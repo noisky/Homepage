@@ -630,6 +630,9 @@ i {
 @media all and (max-width: 960px) {
   .btn-mobile-menu {
     display: block; }
+.qrCode[data-v] {
+    left: 0px;
+}
 
   .panel-main {
     display: table;
