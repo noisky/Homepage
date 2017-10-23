@@ -258,7 +258,18 @@ table thead tbody {
 .logo {
   border-radius: 50%;
   border: 3px solid #FFF;
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3); 
+  transition:all .5s; }
+.logo:hover {
+  border: 3px solid #5ba4e5;
+transition:all .5s;
+transform:rotate(360deg);
+-ms-transform:rotate(360deg); 	/* IE 9 */
+-moz-transform:rotate(360deg); 	/* Firefox */
+-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+-o-transform:rotate(350deg); 	/* Opera */
+}
+
 
 hr {
   border: none; }
@@ -538,8 +549,10 @@ nav {
     opacity: .8; }
     .navigation__item a:hover {
       color: #FFF;
-      border-color: #FFF;
-      opacity: 1; }
+      background:rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.3);
+      opacity: 1;
+      transition:all .3s; }
 
 .navigation--social a {
   border: 0px;
