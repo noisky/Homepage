@@ -63,10 +63,10 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 ::selection {
-  background: #e5af99; }
+  background: rgba(255, 255, 255, 0.3); }
 
 ::-moz-selection {
-  background: #e5af99; }
+  background: rgba(255, 255, 255, 0.3); }
 
 a {
   text-decoration: none;
