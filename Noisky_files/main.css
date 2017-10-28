@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 @import url(animate.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -116,26 +112,8 @@ p {
   margin-bottom: 1.3em;
   line-height: 1.7em; }
 
-strong {
-  font-weight: bold; }
-
 em {
   font-style: italic; }
-
-blockquote {
-  padding: 0px 10px;
-  margin: 0 0 10px;
-  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  font-weight: normal;
-  font-size: 1em;
-  border-left: 3px solid #DF9C81;
-  background: white; }
-  blockquote p:last-child {
-    margin-bottom: 0; }
-
-sup {
-  font-size: .8em;
-  vertical-align: text-bottom; }
 
 ol, ul {
   margin: 0 0 .3em 1em; }
@@ -150,35 +128,6 @@ ol {
 
 ul {
   list-style-type: disc; }
-
-thead tr:first-child {
-  color: #d57c58;
-  border: 1px solid #DDDDDD;
-  text-align: center; }
-
-th {
-  font-weight: bold; }
-
-th:first-child, td:first-child {
-  padding: 5px 10px 5px 10px;
-  border: 1px solid #DDDDDD; }
-
-thead tr:last-child th {
-  border: 1px solid #DDDDDD; }
-
-tbody td {
-  border-bottom: 1px solid #DDDDDD;
-  font-size: .85em; }
-
-td:last-child {
-  padding-right: 10px; }
-
-tr, td {
-  padding: 5px 10px;
-  border: 1px solid #DDDDDD; }
-
-table thead tbody {
-  vertical-align: middle; }
 
 .date,
 .time,
@@ -197,54 +146,6 @@ table thead tbody {
     .tags a:hover {
       color: #d06c44; }
 
-.excerpt {
-  margin: 0;
-  font-size: .9em;
-  color: #999999; }
-
-.intro {
-  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  font-size: 1.2em;
-  font-weight: lighter;
-  color: #999999; }
-
-.block-heading {
-  display: inline;
-  float: left;
-  width: 940px;
-  margin: 0 10px;
-  position: relative;
-  bottom: -15px;
-  font-size: .8em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
-.label {
-  position: relative;
-  display: inline-block;
-  padding: 8px 18px 9px 18px;
-  background: #DF9C81;
-  border-radius: 3px;
-  text-align: center;
-  color: #FFF; }
-
-.container {
-  position: relative;
-  z-index: 500;
-  width: 940px;
-  margin: 0 auto; }
-
-.content-wrapper {
-  z-index: 800;
-  width: 70%;
-  margin-left: 30%; }
-
-.content-wrapper__inner {
-  margin: 0 10%;
-  padding: 50px 0; }
-
 .footer {
     position: absolute;
     font-size: .7em;
@@ -253,13 +154,12 @@ table thead tbody {
     left: 0;
     width: 100%;
 }
-
-.avatar,
 .logo {
   border-radius: 50%;
   border: 3px solid #FFF;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3); 
-  transition:all .5s; }
+  transition:all .5s; 
+  width: 25%;}
 .logo:hover {
   border: 3px solid #5ba4e5;
 transition:all .5s;
@@ -270,32 +170,30 @@ transform:rotate(360deg);
 -o-transform:rotate(350deg); 	/* Opera */
 }
 
+.Weibo_icon_logo {
+    background-position: -50px -25px;
+	width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    vertical-align: -2px;
+}
+.Weibo_icon {
+    display: inline-block;
+    background-image: url(../Noisky_files/img/V_icon.png);
+    background-repeat: no-repeat;
+}
+.Weibo_icon_position {
+    position: relative;
+    right: 42px;
+    top: -12px;
+}
 
 hr {
   border: none; }
 
-.section-title__divider {
-  width: 30%;
-  margin: 2.2em 0 2.1em 0;
-  border-top: 1px solid #DDDDDD; }
-
 .hidden {
   display: none !important; }
-
-.post-comments {
-  border-top: 1px solid #DDDDDD;
-  padding: 60px 0; }
-
-.post-meta {
-  margin: 0 0 .4em 0;
-  color: #c7c7c7;
-  word-wrap: break-word; }
-
-.post-meta__date {
-  margin-right: .5em; }
-
-.post-meta__tags {
-  margin-left: .4em; }
 
 .post-meta__author {
   margin-left: 1.5em; }
@@ -605,7 +503,7 @@ i {
     width: 92px;
     height: 92px;
     bottom: 42px;
-    left: -28px;
+    left: -25px;
     text-align: center;
     background-color: #fff;
 }
@@ -624,9 +522,6 @@ i {
  
 
 @media all and (max-width: 1100px) {
-  .panel-cover__logo {
-    width: 70px; }
-
   .panel-title {
     font-size: 2em; }
 
@@ -641,10 +536,10 @@ i {
     margin-top: 5px;
     margin-left: 0; } }
 @media all and (max-width: 960px) {
-  .btn-mobile-menu {
+.btn-mobile-menu {
     display: block; }
-.qrCode[data-v] {
-    left: 0px;
+   .qrCode[data-v] {
+    Margin: 0px 41%;
 }
 
   .panel-main {
@@ -729,6 +624,22 @@ i {
   .navigation__item {
     width: 100%;
     margin: 0 0 .4em 0; } }
+@media all and (max-width: 767px) {
+   .panel-cover__logo {
+    width: 100px; }
+   .Weibo_icon_position {
+    right: 35px;
+    top: -6px;
+}
+	.qrCode[data-v] {
+    Margin: 0px 38%;
+}
+}
+@media all and (max-width: 480px) {
+	.qrCode[data-v] {
+    Margin: 0px 30%;
+}
+}
 @media all and (max-width: 340px) {
   .panel-main__inner {
     padding: 0 5%; }
