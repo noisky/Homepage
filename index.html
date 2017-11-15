@@ -4,15 +4,15 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="viewport" content="width=device-width, maximum-scale=2">
-
   <title>Noisky |- 饭饭</title>
   <meta name="author" content="Noisky">
   <meta name="copyright" content="Noisky's Laboratory"/>
   <link rel="icon" href="./Noisky_files/img/favicon.ico">
   <link rel="shortcut icon" href="./Noisky_files/img/favicon.ico">
-  
   <link rel="stylesheet" href="./Noisky_files/font-awesome.min.css">
   <link rel="stylesheet" href="./Noisky_files/main.css">
+  <script type="text/javascript" src="./Noisky_files/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="./Noisky_files/hitokoto.js"></script>
 </head>
 <body>
     <span class="mobile btn-mobile-menu">
@@ -38,47 +38,34 @@
     document.write('<header class="panel-cover" style="background-image: url(' + bg[randomBgIndex] + ')">');
 	//]]>
 	</script>
-	
   <div class="panel-main">
-
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-	    
 		<a href="http://ffis.me/" title="前往 饭饭's Blog"><img src="./Noisky_files/img/noisky.jpg" alt="Noisky logo" class="panel-cover__logo logo"></a>
 		<a href="http://weibo.com/u/5230249128" class="Weibo_icon_position"><em title="前往饭饭的微博" class="Weibo_icon Weibo_icon_logo"></em></a>
 
         <h1 class="panel-cover__title panel-title"><a href="http://ffis.me/" title="link to homepage for noisky">饭饭</a></h1>
-        <script type="text/javascript" src="https://api.imjad.cn/hitokoto/?encode=js&charset=utf-8"></script>
-        <span class="panel-cover__subtitle panel-subtitle"><script>hitokoto()</script></span>
+  <!-- 一言 -->
+        <span class="panel-cover__subtitle panel-subtitle"><div id="hitokoto">『少女祈祷中…』<script>getHitokoto()</script></div></span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">嗨，我是 Noisky，一名来自 2.5 次元的魔法师，目前就读于河南工业大学，魔法学院，土木工程专业。</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
         
         <p class="panel-cover__description">欢迎来到我的魔法世界!</p>
-        <!-- 底部年份动态化 -->
-		<script type="text/javascript">
-		var myDate = new Date();
-		document.write('<p class="footer">Noisky &copy; '+myDate.getFullYear()+'  |  <a style="TEXT-DECORATION: none" href="http://www.miibeian.gov.cn" rel="nofollow" target="_blank"><font color="#b3b3b3">豫ICP备16034017号-1</font></a></p>');
-		</script> 
 		
         <div class="navigation-wrapper">
           <div>
             <nav class="cover-navigation cover-navigation--primary">
               <ul class="navigation">
                 <li class="navigation__item"><a href="https://ffis.me/" title="访问博客">博客</a></li>
-                
                 <li class="navigation__item"><a href="https://img.ffis.me/" target="_blank" title="饭饭's 图床">图床</a></li>
-                  
                 <li class="navigation__item"><a href="https://sign.ffis.me/" title="饭饭's 签到站">签到站</a></li>
-
                 <li class="navigation__item"><a href="https://dl.ffis.me/" title="饭饭's 下载站">下载站</a></li>
-
                 <li class="navigation__item"><a href="https://ffis.me/about.html" title="关于饭饭">关于</a></li>
               </ul>
             </nav>
-          </div>
-          
+          </div>   
 <div><nav class="cover-navigation navigation--social">
   <ul class="navigation">
   <!-- Weibo -->
@@ -141,12 +128,15 @@
 </nav>
 </div>
         </div>
+		<!-- 底部年份动态化 + 备案号 -->
+		<footer class="footer">
+		<p>&copy; <script>document.write(new Date().getFullYear())</script> Noisky.cn   |  <a style="TEXT-DECORATION: none" href="http://www.miibeian.gov.cn" rel="nofollow" target="_blank"><font color="#b3b3b3">豫ICP备16034017号-1</font></a></p>
+		</footer>
       </div>
     </div>
     <div class="panel-cover--overlay cover-slate"></div>
   </div>
 </header>
-<script type="text/javascript" src="./Noisky_files/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="./Noisky_files/main.js"></script>
   <!-- 统计代码 -->
 </body>
