@@ -13,3 +13,4 @@ $.ajax({
         }
          });
  }
+getHitokoto()
