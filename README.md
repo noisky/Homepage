@@ -12,5 +12,5 @@ This is a homepage written in HTML/JavsScript for Noisky.
 - 背景图片随机选取。
 - 接入了 jad 的一言并实现了异步加载。
 
-本项目测试地址：http://noisky.ml
+本项目展示地址：http://noisky.ml
 
