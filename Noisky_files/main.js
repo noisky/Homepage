@@ -1,3 +1,7 @@
+/**
+ * Created by Noisky on 17/05/13.
+ * Revised by Noisky on 18/11/27.
+ */
 $(document).ready(function() {
 
   $('a.blog-button').click(function() {
