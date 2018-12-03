@@ -2,6 +2,7 @@
  * Created by Noisky on 17/05/13.
  * Revised by Noisky on 18/11/27.
  */
+// 一言异步加载代码
 function getHitokoto() {
 $.ajax({
         url: "https://api.imjad.cn/hitokoto/?encode=jsc&charset=utf-8&length=50",
