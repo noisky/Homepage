@@ -2,7 +2,7 @@
  * Created by Noisky on 17/05/13.
  * Revised by Noisky on 19/08/29.
  */
-$(document).ready(function() {
+$(document).ready(function () {
     // 移动端下拉菜单栏
     var nw = $('.navigation-wrapper');
 
@@ -15,7 +15,7 @@ $(document).ready(function() {
     }
 
     // 根据菜单状态定义单击的操作
-    $('.btn-mobile-menu').click(function() {
+    $('.btn-mobile-menu').click(function () {
         if (nw.css('display') === "block") {
             bounceOutUp();
         } else {
@@ -24,14 +24,14 @@ $(document).ready(function() {
         $('.btn-mobile-menu_icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
     });
     // 点击下拉菜单以外的其他标签区域收起菜单生效
-    $(".panel-main").on('click', ':not(.mobile,.btn-mobile-menu,.navigation-wrapper)', function() {
+    $(".panel-main").on('click', ':not(.mobile,.btn-mobile-menu,.navigation-wrapper)', function () {
         if (nw.hasClass("bounceInDown")) {
             bounceOutUp();
             $('.btn-mobile-menu_icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
         }
     });
     // 阻止冒泡事件执行
-    nw.click(function(event) {
+    nw.click(function (event) {
         event.stopPropagation();
     });
     // 底部年份动态化

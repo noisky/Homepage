@@ -1,0 +1,99 @@
+/*
+ * Font Awesome Lite.
+ * Created by Noisky on 19/08/29.
+ * Revised by Noisky on 19/08/29.
+ */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../Noisky_files/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa-weibo:before {
+    content: "\f18a"
+}
+
+.fa-qq:before {
+    content: "\f1d6"
+}
+
+.fa-telegram:before {
+    content: "\f2c6"
+}
+
+.fa-wechat:before,
+.fa-weixin:before {
+    content: "\f1d7"
+}
+
+.fa-github-square:before {
+    content: "\f092"
+}
+
+.fa-github:before {
+    content: "\f09b"
+}
+
+.fa-github-alt:before {
+    content: "\f113"
+}
+
+.fa-feed:before,
+.fa-rss:before {
+    content: "\f09e"
+}
+
+.fa-rss-square:before {
+    content: "\f143"
+}
+
+.fa-list-alt:before {
+    content: "\f022"
+}
+
+.fa-list:before {
+    content: "\f03a"
+}
+
+.fa-list-ul:before {
+    content: "\f0ca"
+}
+
+.fa-list-ol:before {
+    content: "\f0cb"
+}
+
+.fa-angle-up:before {
+    content: "\f106"
+}
+
+.fa-envelope-o:before {
+    content: "\f003"
+}
+
+.fa-envelope:before {
+    content: "\f0e0"
+}
+
+.fa-envelope-square:before {
+    content: "\f199"
+}
+
+.fa-envelope-open:before {
+    content: "\f2b6"
+}
+
+.fa-envelope-open-o:before {
+    content: "\f2b7"
+}
