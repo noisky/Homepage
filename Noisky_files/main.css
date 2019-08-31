@@ -198,17 +198,16 @@ ul {
 }
 
 .Weibo_icon_logo {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
-    background-position: -50px -25px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     vertical-align: -2px;
 }
 
 .Weibo_icon {
     display: inline-block;
-    background-image: url(../Noisky_files/img/V_icon.png);
+    background-image: url(../Noisky_files/img/V_icon_lite.png);
     background-repeat: no-repeat;
 }
 

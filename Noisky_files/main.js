@@ -1,6 +1,6 @@
 /**
  * Created by Noisky on 17/05/13.
- * Revised by Noisky on 19/08/29.
+ * Revised by Noisky on 19/08/30.
  */
 $(document).ready(function () {
     // 移动端下拉菜单栏
@@ -38,7 +38,7 @@ $(document).ready(function () {
     $('.year').html(new Date().getFullYear());
 
     // 一言异步加载代码
-    function getHitokoto() {
+    (function getHitokoto() {
         $.ajax({
             url: "https://api.imjad.cn/hitokoto/?encode=jsc&charset=utf-8&length=50",
             dataType: "jsonp",
@@ -52,7 +52,11 @@ $(document).ready(function () {
                 $('#hitokoto').html("<p>读取数据失败了的说……_(:з」∠)_</p>")
             }
         });
-    }
+    })();
 
-    getHitokoto();
+    // 随机背景图片
+    var bgNum = 10; // 定义随机数范围 1-10 和图片数量保持一致
+    var randomNum = Math.round(Math.random() * bgNum) + 1;
+    var imgUrl = './Noisky_files/img/background-image/bg-' + randomNum + '.jpg';
+    $('#bg-img').html("<header class='panel-cover' style='background-image: url(" + imgUrl + ")'></header>");
 });
