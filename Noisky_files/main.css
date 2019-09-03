@@ -197,9 +197,10 @@ ul {
     /* IE 9 */
 }
 
+/* 微博图标 */
 .Weibo_icon_logo {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     vertical-align: -2px;
@@ -207,7 +208,7 @@ ul {
 
 .Weibo_icon {
     display: inline-block;
-    background-image: url(../Noisky_files/img/V_icon_lite.png);
+    background-image: url(./img/V_icon_lite.png);
     background-repeat: no-repeat;
 }
 

@@ -6,9 +6,9 @@
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url('../Noisky_files/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2');
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
+    src: url('../Noisky_files/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2')
 }
 
 .fa {
@@ -96,4 +96,8 @@
 
 .fa-envelope-open-o:before {
     content: "\f2b7"
+}
+
+.fa-home:before {
+    content: "\f015"
 }
