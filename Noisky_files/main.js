@@ -1,9 +1,22 @@
 /**
  * Created by Noisky on 17/05/13.
- * Revised by Noisky on 19/08/30.
+ * Revised by Noisky on 19/09/10.
  */
 $(document).ready(function () {
-    // 移动端下拉菜单栏
+    /**
+     * 随机获取背景图片
+     */
+    var bgNum = 10; // 定义随机数范围 1-10 和图片数量保持一致
+    var randomNum = Math.floor(Math.random() * bgNum) + 1;
+    // 拼接图片地址
+    var imgUrl = './Noisky_files/img/background-image/bg-' + randomNum + '.jpg';
+    // 替换页面中的背景图片地址
+    document.getElementsByClassName("panel-cover")[0].style = "background-image: url(" + imgUrl + ")";
+
+    /**
+     * 移动端下拉菜单栏
+     * @type {jQuery|HTMLElement}
+     */
     var nw = $('.navigation-wrapper');
 
     // 定义菜单关闭事件
@@ -34,10 +47,14 @@ $(document).ready(function () {
     nw.click(function (event) {
         event.stopPropagation();
     });
-    // 底部年份动态化
+    /**
+     * 底部年份动态化
+     */
     $('.year').html(new Date().getFullYear());
 
-    // 一言异步加载代码
+    /**
+     * 异步加载一言
+     */
     (function getHitokoto() {
         $.ajax({
             url: "https://api.imjad.cn/hitokoto/?encode=jsc&charset=utf-8&length=50",
@@ -53,10 +70,4 @@ $(document).ready(function () {
             }
         });
     })();
-
-    // 随机背景图片
-    var bgNum = 10; // 定义随机数范围 1-10 和图片数量保持一致
-    var randomNum = Math.round(Math.random() * bgNum) + 1;
-    var imgUrl = './Noisky_files/img/background-image/bg-' + randomNum + '.jpg';
-    $('#bg-img').html("<header class='panel-cover' style='background-image: url(" + imgUrl + ")'></header>");
 });
