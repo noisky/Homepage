@@ -11,11 +11,10 @@ $(document).ready(function () {
     // 拼接图片地址
     var imgUrl = './Noisky_files/img/background-image/bg-' + randomNum + '.jpg';
     // 替换页面中的背景图片地址
-    document.getElementsByClassName("panel-cover")[0].style = "background-image: url(" + imgUrl + ")";
+    $("header").css("background-image", "url(" + imgUrl + ")");
 
     /**
      * 移动端下拉菜单栏
-     * @type {jQuery|HTMLElement}
      */
     var nw = $('.navigation-wrapper');
 
@@ -57,7 +56,8 @@ $(document).ready(function () {
      */
     (function getHitokoto() {
         $.ajax({
-            url: "https://api.imjad.cn/hitokoto/?encode=jsc&charset=utf-8&length=50",
+            //url: "https://api.imjad.cn/hitokoto/?encode=jsc&charset=utf-8&length=50",
+            url: "https://v1.hitokoto.cn/?encode=json&charset=utf-8",
             dataType: "jsonp",
             async: true,
             jsonp: "callback",
