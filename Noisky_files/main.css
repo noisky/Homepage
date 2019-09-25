@@ -197,7 +197,7 @@ ul {
     /* IE 9 */
 }
 
-/* 微博图标 */
+/* 微博图标
 .Weibo_icon_logo {
     width: 20px;
     height: 20px;
@@ -216,6 +216,25 @@ ul {
     position: relative;
     top: -12px;
     right: 42px;
+}*/
+
+/* 国旗 */
+.Weibo_icon_position {
+    position: relative;
+    right: 42px;
+    top: -5px;
+}
+
+.Weibo_icon {
+    display: inline-block;
+    background-image: url(./img/China40x40.png);
+    background-repeat: no-repeat;
+}
+
+.Weibo_icon_logo {
+    width: 40px;
+    height: 40px;
+    vertical-align: -2px;
 }
 
 hr {
