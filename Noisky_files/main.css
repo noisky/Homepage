@@ -227,13 +227,13 @@ ul {
 
 .Weibo_icon {
     display: inline-block;
-    background-image: url(./img/China40x40.png);
+    background-image: url(./img/feed_icon_32x28.png);
     background-repeat: no-repeat;
 }
 
 .Weibo_icon_logo {
     width: 40px;
-    height: 40px;
+    height: 35px;
     vertical-align: -2px;
 }
 
