@@ -165,16 +165,6 @@ ul {
     color: #d06c44;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: #b3b3b3;
-    font-size: .7em;
-}
-
-
 .logo {
     width: 25%;
     border: 3px solid #FFF;
@@ -337,8 +327,25 @@ hr {
     color: #FFF;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #d2d2d2;
+    font-size: .7em;
+}
+
 .footer a {
-    color: #b3b3b3;
+    color: #d2d2d2;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.footer img {
+    vertical-align: bottom;
 }
 
 .cover-navigation {
