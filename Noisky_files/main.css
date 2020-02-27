@@ -328,6 +328,7 @@ hr {
 }
 
 .footer {
+    display: block;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -546,7 +547,7 @@ nav {
     }
 
     .panel-main {
-        position: relative;
+        position: fixed;
         display: table;
     }
 

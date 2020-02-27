@@ -22,6 +22,7 @@ $(document).ready(function () {
     function bounceOutUp() {
         nw.on(function () {
             nw.toggleClass('visible animated bounceOutUp');
+
         });
         nw.toggleClass('animated bounceInDown animated bounceOutUp');
     }
@@ -33,6 +34,18 @@ $(document).ready(function () {
         } else {
             nw.toggleClass('visible animated bounceInDown');
         }
+        if ($('.footer').css('display') === "block") {
+            // 显示下拉框的时候，隐藏 footer 防止出现冲突
+            $('.footer').css('display', 'none');
+            // 导航改成绝对定位，实现可以滚动
+            $('.navigation-wrapper').css('position', 'absolute');
+            $('.panel-main').css('position', 'absolute')
+        } else {
+            // 收起下拉框的时候，取消改动
+            $('.footer').css('display', 'block');
+            $('.navigation-wrapper').css('position', 'fixed');
+            $('.panel-main').css('position', 'fixed')
+        }
         $('.btn-mobile-menu_icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
     });
     // 点击下拉菜单以外的其他标签区域收起菜单生效
@@ -41,6 +54,9 @@ $(document).ready(function () {
             bounceOutUp();
             $('.btn-mobile-menu_icon').toggleClass('fa fa-list fa fa-angle-up animated fadeIn');
         }
+        $('.footer').css('display') === "none" ? $('.footer').css('display', 'block') : "";
+        $('.panel-main').css('position') === "absolute" ? $('.panel-main').css('position', 'fixed') : "";
+        $('.navigation-wrapper').css('position') === "absolute" ? $('.panel-main').css('position', 'fixed') : ""
     });
     // 阻止冒泡事件执行
     nw.click(function (event) {
