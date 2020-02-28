@@ -311,8 +311,8 @@ hr {
 }
 
 .panel-main_content {
-    margin: 0 auto;
     max-width: 620px;
+    margin: 70px auto;
 }
 
 
@@ -538,6 +538,11 @@ nav {
 }
 
 @media all and (max-width: 960px) {
+
+    .panel-main_content {
+        margin: 0 auto;
+    }
+
     .btn-mobile-menu {
         display: block;
     }
