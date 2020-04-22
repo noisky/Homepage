@@ -70,7 +70,7 @@ $(document).ready(function () {
     /**
      * 异步加载一言
      */
-    (function getHitokoto() {
+    /*(function getHitokoto() {
         $.ajax({
             //url: "https://api.imjad.cn/hitokoto/?encode=jsc&charset=utf-8&length=50",
             url: "https://v1.hitokoto.cn/?encode=json&charset=utf-8",
@@ -85,5 +85,5 @@ $(document).ready(function () {
                 $('#hitokoto').html("<p>读取数据失败了的说……_(:з」∠)_</p>")
             }
         });
-    })();
+    })();*/
 });
