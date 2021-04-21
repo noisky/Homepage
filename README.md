@@ -8,7 +8,7 @@ This is a homepage written in HTML/JavsScript for Noisky.
 
 饭饭的个人主页（HTML/JavaScript版）
 
-<img src="https://img.ffis.me/images/2019/10/25/3758164065.png"  alt="noisky.cn" />
+<img src="https://cdn.jsdelivr.net/gh/noisky/Homepage@master/Noisky_files/img/effect_picture.png" alt="noisky.cn" title="个人主页效果图"/>
 
 - 响应式设计，PC/手机/Pad，全平台阅读适配
 - 背景图片随机选取
