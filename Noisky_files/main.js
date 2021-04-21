@@ -9,7 +9,7 @@ $(document).ready(function () {
     var bgNum = 10; // 定义随机数范围 1-10 和图片数量保持一致
     var randomNum = Math.floor(Math.random() * bgNum) + 1;
     // 拼接图片地址
-    var imgUrl = './Noisky_files/img/background-image/bg-' + randomNum + '.jpg';
+    var imgUrl = 'https://cdn.jsdelivr.net/gh/noisky/Homepage@master/Noisky_files/img/background-image/bg-' + randomNum + '.jpg';
     // 替换页面中的背景图片地址
     $("header").css("background-image", "url(" + imgUrl + ")");
 
